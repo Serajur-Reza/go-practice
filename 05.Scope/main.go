@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	calculate_pack "custom/Math"
+	"fmt"
+)
 
 var (
 	a = 20
@@ -30,12 +33,15 @@ func main()  {
 	// c := 10
 	// fmt.Println(c)
 
-	x := 18
+	// x := 18
 
-	if(x >= 18){
-		p := 10
-		fmt.Println(p)
-	}
+	// if(x >= 18){
+	// 	p := 10
+	// 	fmt.Println(p)
+	// }
 
 	// fmt.Println(p)
+
+	res := calculate_pack.Add(10,25)
+	fmt.Println(res)
 }
