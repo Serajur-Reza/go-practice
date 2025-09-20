@@ -21,3 +21,7 @@
 
 ** Compile phase in code segment -> global variable in data segment without constant and function - > init --> main **
 ** Executio in stack -> stack frame inner stack **
+
+
+### receiver function
+** works for one specific custom type
