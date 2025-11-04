@@ -5,6 +5,8 @@
 3. stack --> execution time --> stack frame
 4. heap
 
+variable search flow - stack -> heap -> data segment -> code segment
+
 ## stack (local) memory is faster than global memory
 ## GC -- garbage collertor
 
@@ -25,3 +27,32 @@
 
 ### receiver function
 ** works for one specific custom type
+
+### pointer 
+
+** & - address, * - value
+
+### Slice
+
+maintains 3 things - 1. pointer, 2. length, 3. capacity
+
+creating slice 
+
+1. slice from array
+2. slice from slice
+3. slice literal
+4. make function with length
+5. make function with length and capacity
+6. empty slice/ nil slice
+
+append in go
+
+1. creates stackframe for append
+2. inserts value in from array to slice
+3. gets values in array 
+4. puts in heap 
+5. Creates slice reference in stack
+6. creates a temporary slice with the reference of first element of array
+7. returns it and saves it to stack slice
+8. if len < cap no new array created else new array does
+9. slice underlying rule - length upto 1024 -> capacity will double else capacity will increase 25%
